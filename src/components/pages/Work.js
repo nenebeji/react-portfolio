@@ -1,6 +1,10 @@
 import React from 'react';
+import MovieMadness from '../../assets/images/MovieMadness.png';
+import TeamWebpage from '../../assets/images/TeamWebpage.png';
+import Letsquiz from '../../assets/images/Letsquiz.png';
+import TruWeather from '../../assets/images/TRUweather.png';
 
-export default function Blog() {
+export default function Work() {
   return (
     <div id="work">
     <h1 id="worktitle" style={{color: 'antiquewhite'}}>Here's What I've Built</h1>
@@ -34,7 +38,7 @@ export default function Blog() {
         <div className="col-9 col-sm-6 allcards">
           <div className="flip-card">
             <div id="movieinfo" className="info flip-card-inner">
-              <div className="flip-card-front"><img src="../../assets/images/MovieMadness.png" alt="MovieMadness" style={{width: '500px'}}></img></div>
+              <div className="flip-card-front"><img src={MovieMadness} alt="MovieMadness" style={{width: '500px'}}></img></div>
               <div className="card text-bg-warning mb-3 cardtxt flip-card-back" style={{minWidth: '500px'}}>
                 <div className="card-body">
                   <h5 className="card-title">Movie Madness</h5>
@@ -53,7 +57,7 @@ export default function Blog() {
         <div className="col-9 col-sm-6 allcards">
           <div className="flip-card">
             <div id="movieinfo" className="info flip-card-inner">
-              <div className="flip-card-front"><img src="../../assets/images/TeamWebpage.png" alt="MovieMadness" style={{width: '500px', height: '300px'}}></img></div>
+              <div className="flip-card-front"><img src={TeamWebpage} alt="Teamwebpage" style={{width: '500px', height: '300px'}}></img></div>
               <div className="card text-bg-warning mb-3 cardtxt flip-card-back" style={{minWidth: '500px'}}>
                 <div className="card-body">
                   <h5 className="card-title">Build A Team</h5>
@@ -74,7 +78,7 @@ export default function Blog() {
         <div className="col-9 col-sm-6 allcards">
           <div className="flip-card">
             <div id="movieinfo" className="info flip-card-inner">
-              <div className="flip-card-front"><img src="../../assets/images/Letsquiz.png" alt="MovieMadness" style={{width: '500px'}}></img></div>
+              <div className="flip-card-front"><img src={Letsquiz} alt="Letsquiz" style={{width: '500px'}}></img></div>
               <div className="card text-bg-warning mb-3 cardtxt flip-card-back" style={{minWidth: '500px'}}>
                 <div className="card-body">
                   <h5 className="card-title">Let's Quiz</h5>
@@ -93,7 +97,7 @@ export default function Blog() {
         <div className="col-9 col-sm-6 allcards">
           <div className="flip-card">
             <div id="movieinfo" className="info flip-card-inner">
-              <div className="flip-card-front"><img src="../../assets/images/TRUweather.png" alt="MovieMadness" style={{width: '500px'}}></img></div>
+              <div className="flip-card-front"><img src={TruWeather} alt="TruWeather" style={{width: '500px'}}></img></div>
               <div className="card text-bg-warning mb-3 cardtxt flip-card-back" style={{minWidth: '500px'}}>
                 <div className="card-body">
                   <h5 className="card-title">TRUweathEr</h5>
