@@ -13,6 +13,9 @@ function Footer () {
                     <li class="nav-item">
                         <a href="https://www.linkedin.com/in/oritsegidenenebeji/" id="linkedin" target="_blank" rel='noreferrer noopener'><i class="fa-brands fa-linkedin"></i></a>
                     </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/oritsegidenenebeji/" id="stack" target="_blank" rel='noreferrer noopener'><i class="fa-brands fa-stack-overflow"></i></a>
+                    </li>
                 </ul>
             </div>
             <div id="emailcont">

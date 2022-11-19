@@ -1,15 +1,17 @@
 import React from 'react';
+import TradrImage from '../../assets/images/tradr.png'
 import MovieMadness from '../../assets/images/MovieMadness.png';
 import TeamWebpage from '../../assets/images/TeamWebpage.png';
 import Letsquiz from '../../assets/images/Letsquiz.png';
 import TruWeather from '../../assets/images/TRUweather.png';
+import RobotechImage from '../../assets/images/blogimage.png';
 
 export default function Work() {
   return (
     <div id="work">
     <h1 id="worktitle" style={{color: 'antiquewhite'}}>Here's What I've Built</h1>
     <div className="container">
-      <div className="row">
+      {/* <div className="row">
         <div className="col-lg-7 col-md-7 col-sm-7 order-2 order-md-1 order-lg-1" style={{marginRight: '-5%'}}>
           <a href="https://calm-gorge-52770.herokuapp.com" target="_blank" rel='noreferrer noopener'><div id="tradr" className="gallery"></div></a>
         </div>
@@ -32,8 +34,29 @@ export default function Work() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="row">
+        {/* <!-- Tradr --> */}
+        <div className="col-9 col-sm-6 allcards">
+          <div className="flip-card">
+            <div id="movieinfo" className="info flip-card-inner">
+              <div className="flip-card-front"><img src={TradrImage} alt="TradrImage" style={{width: '500px'}}></img></div>
+              <div className="card text-bg-warning mb-3 cardtxt flip-card-back" style={{minWidth: '500px'}}>
+                <div className="card-body">
+                  <h5 className="card-title">Tradr Marketplace</h5>
+                  <p className="card-text">First full-stack developed application. 
+                  This is an open-source marketplace app that allows the user to register, buy and sell products.</p>
+                  <p className="card-text">Built using HTML5, Handelbars.js, CSS3, Javascript, Bootstrap, Node.js, Express, MySQL,
+                  Sequelize, Prettier, Bcrypt, dotenv and more.</p>
+                </div>
+                <div className="cardlink" style={{marginBottom: '2%'}}>
+                  <a href="https://github.com/nenebeji/tradr-marketplace" target="_blank" style={{marginRight: '3%'}} rel='noreferrer noopener'><i className="fa-brands fa-github" style={{fontSize: '1.6rem'}}></i></a>
+                  <a href="https://calm-gorge-52770.herokuapp.com" target="_blank" style={{marginRight: '3%'}} rel='noreferrer noopener'><i className="fa-solid fa-link" style={{marginRight: '3%', fontSize: '1.6rem'}}></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* <!-- Movie Madness card --> */}
         <div className="col-9 col-sm-6 allcards">
           <div className="flip-card">
@@ -48,6 +71,26 @@ export default function Work() {
                 <div className="cardlink" style={{marginBottom: '2%'}}>
                   <a href="https://github.com/nenebeji/Movie-Madness" target="_blank" style={{marginRight: '3%'}} rel='noreferrer noopener'><i className="fa-brands fa-github" style={{fontSize: '1.6rem'}}></i></a>
                   <a href="https://nenebeji.github.io/Movie-Madness/" target="_blank" style={{marginRight: '3%'}} rel='noreferrer noopener'><i className="fa-solid fa-link" style={{marginRight: '3%', fontSize: '1.6rem'}}></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <!-- RoboTech Blog --> */}
+        <div className="col-9 col-sm-6 allcards">
+          <div className="flip-card">
+            <div id="movieinfo" className="info flip-card-inner">
+              <div className="flip-card-front"><img src={RobotechImage} alt="RobotechImage" style={{width: '500px'}}></img></div>
+              <div className="card text-bg-warning mb-3 cardtxt flip-card-back" style={{minWidth: '500px'}}>
+                <div className="card-body">
+                  <h5 className="card-title">RoboTech Blog</h5>
+                  <p className="card-text">This is a CMS style blog post full stack application that allows a user to publish articles, blog post, view and comment on previous posts, and publish their thoughts and opinion.</p>
+                  <p className="card-text">Built using HTML5, Handelbars.js, CSS3, Javascript, Bootstrap, Node.js, Express, MySQL,
+                  Sequelize, Prettier, Bcrypt, dotenv and more.</p>
+                </div>
+                <div className="cardlink" style={{marginBottom: '2%'}}>
+                  <a href=" https://github.com/nenebeji/RoboTech-Blog" target="_blank" style={{marginRight: '3%'}} rel='noreferrer noopener'><i className="fa-brands fa-github" style={{fontSize: '1.6rem'}}></i></a>
+                  <a href="https://robotech-blog.herokuapp.com" target="_blank" style={{marginRight: '3%'}} rel='noreferrer noopener'><i className="fa-solid fa-link" style={{marginRight: '3%', fontSize: '1.6rem'}}></i></a>
                 </div>
               </div>
             </div>
