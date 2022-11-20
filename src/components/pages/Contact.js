@@ -21,13 +21,16 @@ export default function Contact() {
   };
   // const [isActive, setIsActive] = useState(false);
 
-  const handleFocus = event => {
+  const handleBlur = event => {
     // 👇️ toggle isActive state on click
     // setIsActive(!isActive);
-    (event.target.value === '')?
-    event.target.classList.add('is-invalid'):
-    event.target.classList.remove('is-invalid');
-  };
+    if(event.target.value === '') {
+      event.target.classList.add('is-invalid');
+      return false;
+    } else {event.target.classList.remove('is-invalid');
+    return true;
+    }
+  }
   return (
     <div id="contact" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
     <div className="row text-center" id="contacttextinfo" style={{margin: 'auto'}}>
@@ -42,7 +45,7 @@ export default function Contact() {
             name='name'
             onChange={handleInputChange}
             className="form-control"
-            onFocus={handleFocus}
+            onBlur={handleBlur}
             id="NameInput"
             value={name} 
             aria-describedby="NameFeedback" required>
@@ -57,7 +60,7 @@ export default function Contact() {
             name='email'
             onChange={handleInputChange} 
             className="form-control"
-            onFocus={handleFocus}
+            onBlur={handleBlur}
             id="EmailInput"
             value={email} 
             aria-describedby="EmailFeedback" required pattern="^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$">
@@ -72,7 +75,7 @@ export default function Contact() {
             name='message'
             onChange={handleInputChange}
             className="form-control"
-            onFocus={handleFocus}
+            onBlur={handleBlur}
             id="MessageInput" 
             placeholder="Please enter message here" style={{height: '200px'}} required>
             {message}</textarea>
