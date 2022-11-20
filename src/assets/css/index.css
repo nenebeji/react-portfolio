@@ -30,9 +30,12 @@ header ul li .nav-link:hover {
     color: #FFEA00;
 }
 
-header ul li .nav-link:active {
+/* header ul li .nav-link:active {
     color: #FFEA00;
 }
+.active {
+    color: #FFEA00;
+} */
 
 header ul li {
     padding: 1%
@@ -80,7 +83,7 @@ header ul li {
 #homecont {
     position: sticky;
     top: 0.5px;
-    margin-bottom: 7%;
+    margin-bottom: 12%;
 }
 
 .welcome {

@@ -1,40 +1,88 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 export default function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either Name, Email, and Message
+    if (inputType === 'name') {
+      setName(inputValue);
+    } else if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'message'){
+      setMessage(inputValue);
+    }
+  };
+  // const [isActive, setIsActive] = useState(false);
+
+  const handleFocus = event => {
+    // 👇️ toggle isActive state on click
+    // setIsActive(!isActive);
+    (event.target.value === '')?
+    event.target.classList.add('is-invalid'):
+    event.target.classList.remove('is-invalid');
+  };
   return (
     <div id="contact" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-    <div class="row text-center" id="contacttextinfo" style={{margin: 'auto'}}>
-      <div class="row">
+    <div className="row text-center" id="contacttextinfo" style={{margin: 'auto'}}>
+      <div className="row">
         <h2 id="contacttext" style={{marginBottom: '5%'}}>Get In Touch</h2>
         {/* contact form */}
-        <form class="contactform">
-          {/* add is-invalid class to input and textarea if no value is entered */}
-          <div class="mb-3">
-            <label for="Name" class="form-label">Name:</label>
-            <input type="text" class="form-control" id="NameInput" aria-describedby="NameFeedback" required>
+        <form className="contactform">
+          {/* add is-invalid className to input and textarea if no value is entered */}
+          <div className="mb-3">
+            <label for="Name" className="form-label">Name:</label>
+            <input type="name" 
+            name='name'
+            onChange={handleInputChange}
+            className="form-control"
+            onFocus={handleFocus}
+            id="NameInput"
+            value={name} 
+            aria-describedby="NameFeedback" required>
             </input>
-            <div id="NameFeedback" class="invalid-feedback">
+            <div id="NameFeedback" className="invalid-feedback">
               Please enter your Name.
             </div>
           </div>
-          <div class="mb-3">
-            <label for="Email" class="form-label">Email:</label>
-            <input type="text" class="form-control" id="EmailInput" aria-describedby="EmailFeedback" required pattern="^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$">
+          <div className="mb-3">
+            <label for="Email" className="form-label">Email:</label>
+            <input type="email"
+            name='email'
+            onChange={handleInputChange} 
+            className="form-control"
+            onFocus={handleFocus}
+            id="EmailInput"
+            value={email} 
+            aria-describedby="EmailFeedback" required pattern="^([a-zA-Z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$">
             </input>
-            <div id="EmailFeedback" class="invalid-feedback">
+            <div id="EmailFeedback" className="invalid-feedback">
               Please enter a valid Email.
             </div>
           </div>
-          <div class="mb-3">
-            <label for="Message" class="form-label">Message:</label>
-            <textarea class="form-control" id="MessageInput" placeholder="Please enter message here" style={{height: '200px'}} required></textarea>
-            <div class="invalid-feedback">
+          <div className="mb-3">
+            <label for="Message" className="form-label">Message:</label>
+            <textarea 
+            name='message'
+            onChange={handleInputChange}
+            className="form-control"
+            onFocus={handleFocus}
+            id="MessageInput" 
+            placeholder="Please enter message here" style={{height: '200px'}} required>
+            {message}</textarea>
+            <div className="invalid-feedback">
               Please enter a message.
             </div>
           </div>
-          {/* add disabled class until when values are inputed  */}
-          <div class="mb-3" style={{marginTop: '5%'}}>
-            <button class="btn btn-primary" id="btnsubmit" type="submit">Submit form</button>
+          {/* add disabled className until when values are inputed  */}
+          <div className="mb-3" style={{marginTop: '5%'}}>
+            <button className="btn btn-primary" id="btnsubmit" type="submit">Submit form</button>
           </div>
         </form>
       </div>
