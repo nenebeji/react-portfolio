@@ -30,7 +30,13 @@ header ul li .nav-link:hover {
     color: #FFEA00;
 }
 
-header ul li .nav-link .active {
+.yellownav {
+    color: #FFEA00;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.yellownav:hover {
     color: #FFEA00;
 }
 
