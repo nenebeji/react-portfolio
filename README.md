@@ -41,8 +41,8 @@ Run `npm start`
 
 ## How to Contribute
 
-1. Clone the repo using $ git clone git@github.com:nenebeji/react-portfolio
-2. Create a new branch $ git checkout -b your name 
+1. Clone the repo using `git clone git@github.com:nenebeji/react-portfolio`
+2. Create a new branch `git checkout -b your name` 
 
 3. Make Changes and test 
 
