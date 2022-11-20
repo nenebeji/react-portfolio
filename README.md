@@ -64,7 +64,7 @@ Email: nenebeji@gmail.com
 
 Github Repo: https://github.com/nenebeji/react-portfolio
 
-Live Url: https://robotech-blog.herokuapp.com 
+Live Url: https://nenebeji.github.io/react-portfolio/ 
 
 ## License
 
