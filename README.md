@@ -33,7 +33,7 @@ This is my personal portfolio built using react.
 
 ## Installation
 
-Run  $ npm install to install all dependencies.
+Run `npm install` to install all dependencies.
 
 ## Usage
 
