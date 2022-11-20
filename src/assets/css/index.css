@@ -30,12 +30,9 @@ header ul li .nav-link:hover {
     color: #FFEA00;
 }
 
-/* header ul li .nav-link:active {
+header ul li .nav-link:active {
     color: #FFEA00;
 }
-.active {
-    color: #FFEA00;
-} */
 
 header ul li {
     padding: 1%
@@ -265,70 +262,11 @@ header ul li {
     top: 1%;
     margin-bottom: 10%;
 }
-/* gallery pictures */
-
-.gallery {
-    max-width: 600px;
-    height: 400px;
-    box-shadow: 0 0 5px grey;
-    margin: 20px;
-    padding: 5%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
-  
-  
-  
-/* reveal gallerye picture on hover */
-  
-.gallery:hover {
-    -webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(10%);
-    transform: scale(1.2)
-}
-  
-  
-/* hide gallerye name on hover */
-  
-  
-#tradr {
-    background-image: url(../images/tradr.png);
-    background-size: cover;
-    background-position: center;
-}
 
 .allcards {
     display: flex;
     align-items:center;
     margin: 2% 0%;
-}
-  
-  
-#moviemadness {
-    background-image: url(../images/MovieMadness.png);
-    background-size: cover;
-    background-position: center;
-}
-
-  
-#teambuilder {
-    background-image: url(../images/TeamWebpage.png);
-    background-size: cover;
-    background-position: center;
-}
-  
-  
-#letsquiz {
-    background-image: url(../images/Letsquiz.png);
-    background-size: cover;
-    background-position: center;
-}
-  
-
-#truweather {
-    background-image: url(../images/TRUweather.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .cardtxt {
