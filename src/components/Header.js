@@ -51,10 +51,10 @@ function Header({ currentPage, handlePageChange }) {
         </a>
       </li>
       <li className='nav-item'>
-        <a href='https://drive.google.com/file/d/1JRsjO46ChfC6Kqya4EV1nQFmjhoDj2GN/view?usp=sharing'
-        target='_blank' rel='noreferrer noopener'
-        id='resume'
+        <a href='#resume'
+        onClick={() => handlePageChange('Resume')}
         className='nav-link btn'
+        id='resume'
         >
           Resume
         </a>
