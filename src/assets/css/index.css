@@ -409,3 +409,34 @@ footer #socials #github, footer #socials #linkedin, footer #socials #stack {
     color: #ffff;
     font-size: 3.5rem;
 }
+
+/* Resume */
+
+.brands {
+    font-size: 2rem;
+}
+
+/* get to know me btn */
+#viewresume {
+    color: #04d9ff;
+    border: solid #04d9ff;
+    min-width: 16%;
+    padding: 1%;
+    font-size: 1.3rem;
+}
+
+/* btn hover */
+#viewresume:hover {
+    animation: neonGlow 2s infinite alternate;
+}
+
+#viewresume:active {
+    animation: neonGlowActive 2s infinite alternate;
+}
+
+.viewresume {
+    display: flex;
+    justify-content: center;
+}
+
+/* resume end */

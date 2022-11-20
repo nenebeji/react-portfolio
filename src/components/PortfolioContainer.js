@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 // import '../assets/css/reset.css';
 // import '../assets/css/style.css';
 
@@ -24,6 +25,9 @@ export default function PortfolioContainer() {
     }
     else if (currentPage === 'Contact') {
       return <Contact />;
+    }
+    else {
+      return <Resume />
     }
   };
 
