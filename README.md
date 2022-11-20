@@ -50,7 +50,7 @@ Run `npm start`
 
 ## Tests
 
-Run `npm test`
+Run `npm run test`
 
 ## Questions
 
