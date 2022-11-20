@@ -30,7 +30,7 @@ header ul li .nav-link:hover {
     color: #FFEA00;
 }
 
-header ul li .nav-link:active {
+header ul li .nav-link .active {
     color: #FFEA00;
 }
 
