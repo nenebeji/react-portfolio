@@ -19,11 +19,8 @@ export default function Contact() {
       setMessage(inputValue);
     }
   };
-  // const [isActive, setIsActive] = useState(false);
 
   const handleBlur = event => {
-    // 👇️ toggle isActive state on click
-    // setIsActive(!isActive);
     if(event.target.value === '') {
       event.target.classList.add('is-invalid');
       return false;
@@ -38,7 +35,6 @@ export default function Contact() {
         <h2 id="contacttext" style={{marginBottom: '5%'}}>Get In Touch</h2>
         {/* contact form */}
         <form className="contactform">
-          {/* add is-invalid className to input and textarea if no value is entered */}
           <div className="mb-3">
             <label for="Name" className="form-label">Name:</label>
             <input type="name" 
