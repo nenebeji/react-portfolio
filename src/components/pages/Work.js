@@ -5,7 +5,7 @@ import TeamWebpage from '../../assets/images/TeamWebpage.png';
 import Letsquiz from '../../assets/images/Letsquiz.png';
 import TruWeather from '../../assets/images/TRUweather.png';
 import RobotechImage from '../../assets/images/blogimage.png';
-
+import TriggerImage from '../../assets/images/trigger.png';
 export default function Work() {
   return (
     <div id="work">
@@ -36,6 +36,29 @@ export default function Work() {
         </div>
       </div> */}
       <div className="row">
+       <div class="col-9 col-sm-6 allcards">
+          <div class="flip-card">
+            <div id="movieinfo" class="info flip-card-inner">
+              <div class="flip-card-front"><img src={TriggerImage} alt="TriggerImage" style={{width: '500px'}}></img></div>
+              <div class="card text-bg-warning mb-3 cardtxt flip-card-back" style={{minWidth: '500px'}}>
+                <div class="card-body">
+                  <h5 class="card-title">Trigger</h5>
+                  <p class="card-text">
+                    This is a MERN stack application that allows users to rehome pets which they're no longer able keep. 
+                    User's are able to search for pets by breeds, they can like and comment on pet listings and message the owner if they're interseted in rehoming the pet.
+                  </p>
+                  <p class="card-text">
+                    Built using HTML5, CSS3, Javascript, Bootstrap, React, Mongoose, Express, BCrypt, ApolloGraphQL and NodeJS.
+                  </p>
+                </div>
+                <div className="cardlink" style={{marginBottom: '2%'}}>
+                  <a href="https://github.com/nenebeji/tradr-marketplace" target="_blank" style={{marginRight: '3%'}} rel='noreferrer noopener'><i className="fa-brands fa-github" style={{fontSize: '1.6rem'}}></i></a>
+                  <a href="https://boiling-dusk-63403.herokuapp.com" target="_blank" style={{marginRight: '3%'}} rel='noreferrer noopener'><i className="fa-solid fa-link" style={{marginRight: '3%', fontSize: '1.6rem'}}></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         {/* <!-- Tradr --> */}
         <div className="col-9 col-sm-6 allcards">
           <div className="flip-card">
